@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="creates.css">
+  <title>Create1</title>
+
+  <!--
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+      <script src="jquery.bxslider.min.js"></script>
+      <link href="jquery.bxslider.css" rel="stylesheet" />
+      <script type="text/javascript">
+              $(document).ready(function(){
+                  $('.bxslider').bxSlider({
+                      auto: false,
+                  });
+            });
+      </script>
+
+</head>
+
+<body>
+<!--
+<div class="slider">
+  <div class="slideset">
+    <div class="slide"><img src="image/image1/Splash.JPG" alt=""></div>
+    <div class="slide"><img src="image/image1/List.JPG" alt=""></div>
+    <div class="slide"><img src="image/image1/Post.JPG" alt=""></div>
+    <div class="slide"><img src="image/image1/Show.JPG" alt=""></div>
+  </div>
+
+</div>
+<div class="slider-prev"><button>前へ</button></div>
+<div class="slider-next"><button>次へ</button></div>
+-->
+  <div id="wrap">
+<ul class="bxslider">
+    <li><img src="image/image1/Splash.JPG" alt=""></li>
+    <li><img src="image/image1/List.JPG"></li>
+    <li><img src="image/image1/Post.JPG"></li>
+    <li><img src="image/image1/Show.JPG"></li>
+  </ul>
+  <!--<img class="mainimage" src="image/create1_image.png" alt=""/>-->
+
+  <h1>居酒屋保存アプリ「BarStock」</h1>
+  <h2>使用ソフト：Illustrator,Xcode<br>作成期間：２週間</h2>
+  <p>行った居酒屋をメモして保存しておくオリジナルアプリです。<br>
+    何を作るからデザイン、コーディングまで自分一人で行いました。swift3.0で書いています。
+    写真も保存できるようにして、店の雰囲気など思い出せるようによう作りました。
+  </div>
+
+<!--
+  <footer>JavaScript Samples</footer>
+  <script>
+  (function(){
+  var slideWidth = $('.slide').outerWidth(); // .slideの幅を取得して代入
+var slideNum = $('.slide').length;  // .slideの数を取得して代入
+var slideSetWidth = slideWidth * slideNum; // .slideの幅×数で求めた値を代入
+$('.slideSet').css('width', slideSetWidth); // .slideSetのスタイルシートにwidth: slideSetWidthを指定
+
+var slideCurrent = 0; // 現在地を示す変数
+
+
+// アニメーションの実行
+var sliding = function(){
+  // slideCurrentが0以下だったら
+    if( slideCurrent < 0 ){
+      slideCurrent = slideNum - 1;
+
+    // slideCurrentがslideNumを超えたら
+    }else if( slideCurrent > slideNum - 1){ // slideCUrrent >= slideNumでも可
+      slideCurrent = 0;
+
+    }
+
+$('.slideSet').stop().animate({
+  left: slideCurrent * -slideWidth
+});
+
+$('.slideSet').animate({
+  left: slideCurrent * -slideWidth
+});
+}
+
+// 前へボタンが押されたとき
+$('.slider-prev').click(function(){
+  slideCurrent--;
+  sliding();
+});
+
+// 次へボタンが押されたとき
+$('.slider-next').click(function(){
+  slideCurrent++;
+  sliding();
+});
+}());
+  </script>
+-->
+</body>
+
+</html>
